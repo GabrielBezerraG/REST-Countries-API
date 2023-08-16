@@ -8,23 +8,25 @@ export default function Card({ name, population, region, capital, image, id }) {
    const { theme } = useContext(PageContext);
 
    return (
-      <article 
-         style={{boxShadow: theme.shadow}}
+      <article
+         style={{ boxShadow: theme.shadow }}
          className={styles.card}
       >
          <Link to={`details/${id}`}>
-            <section 
+            <section
                style={
-                  {backgroundImage: `url(${image})`}
-               } 
-               className={styles.flag} 
+                  { backgroundImage: `url(${image})` }
+               }
+               className={styles.flag}
             />
          </Link>
-         <section 
+         <section
             className={styles.info}
-            style={{backgroundColor: theme.backgroundColorLighter}}
+            style={{ backgroundColor: theme.backgroundColorLighter }}
          >
-            <h3>{name}</h3>
+            <h3>
+               {name}
+            </h3>
             <p>
                <span className={styles.bold_text}>
                   Population:

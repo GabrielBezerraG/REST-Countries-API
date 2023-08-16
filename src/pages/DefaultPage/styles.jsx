@@ -7,4 +7,5 @@ export const StyledDefaultPage = styled.div`
    margin: 0 auto;
    display: grid;
    grid-template-rows: auto 1fr;
+   overflow-x: hidden;
 `
