@@ -1,0 +1,48 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --dark-mode-background: hsl(207, 26%, 17%);
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-text: hsl(0, 0%, 98%);
+
+  --light-mode-background: hsl(0, 0%, 98%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --light-mode-input: hsl(0, 0%, 52%);
+  --light-mode-placeholder: hsl(0, 0%, 75%);
+
+  --shadow: 0 5px 12px #c7c7c728;
+  --button-shadow: 0 0 15px #5f5f5f49;
+  --back-button-shadow: 0 0 15px #5c5c5c7c;
+
+  --dark-shadow: 0 5px 12px #27272798;
+  --dark-button-shadow: 0 0 15px #202020ab;
+  --dark-back-button-shadow: 0 0 15px #1d1d1dd3;
+
+  --border-radius: 10px;
+  --border-radius-smaller: 5px;
+
+  --card-width: 525px;
+}
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  overflow: auto;
+}
+
+@media screen and (min-width: 1080px) {
+  :root {
+    --border-radius: 6px;
+
+    --button-shadow: 0 0 6px #6b6b6b42;
+    --back-button-shadow: 0 0 8px #5555556c;
+
+    --dark-button-shadow: 0 0 6px #1d1d1dab;
+    --dark-back-button-shadow: 0 0 8px #1d1d1dd3;
+
+    --card-width: 265px;
+  }
+}
